@@ -6,3 +6,6 @@
 - Creo una funzione per visualizzare i numeri generati sulla pagina Html.
 - Creo un timer per nascondere i numeri dopo 5 secondi.
 - Quando scatta il timer, chiedo all'utente di inserire i numeri che ha visto.
+- Creo una funzione per verificare quanti e quali numeri inseriti dall'utente corrispondono ai numeri generati casualmente.
+- Mostro un alert con il numero di numeri indovinati e la lista dei numeri corretti.
+- Cancello i numeri dalla pagina HTML per prepararti per un nuovo gioco.

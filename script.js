@@ -65,5 +65,19 @@ function promptUserNumbers() {
         const userNumber = parseInt(prompt(`Inserisci il numero ${i + 1} che hai visto:`));
         userNumbers.push(userNumber);
     }
-    console.log(userNumbers);
+    // Dopo che l'utente ha inserito i numeri, controlla quali sono corretti.
+    checkUserNumbers();
+}
+
+// Funzione per verificare quali numeri inseriti dall'utente sono corretti.
+function checkUserNumbers() {
+    const correctNumbers = [];
+    for (const number of userNumbers) {
+        if (randomNumbers.includes(number)) {
+            correctNumbers.push(number);
+        }
+    }
+    // Cancella i numeri dalla pagina e mostra un alert con i risultati.
+    clearNumbers();
+    alert(`Hai indovinato ${correctNumbers.length} numeri: ${correctNumbers.join(', ')}`);
 }
