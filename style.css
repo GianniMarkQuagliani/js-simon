@@ -1,10 +1,30 @@
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Stile del corpo della pagina, impostando un tipo di font e l'allineamento del testo al centro. */
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+}
+
+/* Stile del contenitore principale che centra l'elemento sulla pagina con un margine di 100px dall'alto. */
+.container{
+    margin: 100px auto;
+}
+
+/* Stile per i pulsanti. */
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Stile per l'elemento con l'id "numbers". */
+#numbers{
+    font-size: 24px;
+    margin-top: 20px;
 }
