@@ -25,6 +25,9 @@ function startGame() {
 
     // Avvia un timer per nascondere i numeri dopo 5 secondi.
     setTimeout(() => {
+        clearNumbers();
+        // Avvia un altro timer per chiedere all'utente di inserire i numeri.
+        setTimeout(100);
     }, 5000);
 }
 
@@ -46,5 +49,11 @@ function generateRandomNumbers(count) {
 function displayNumbers(numbers) {
     const numbersDiv = document.getElementById('numbers');
     numbersDiv.innerHTML = numbers.join(' ');
+}
+
+// Funzione per cancellare i numeri dalla pagina HTML.
+function clearNumbers() {
+    const numbersDiv = document.getElementById('numbers');
+    numbersDiv.innerHTML = '';
 }
 
