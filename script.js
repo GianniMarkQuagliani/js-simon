@@ -27,7 +27,7 @@ function startGame() {
     setTimeout(() => {
         clearNumbers();
         // Avvia un altro timer per chiedere all'utente di inserire i numeri.
-        setTimeout(100);
+        setTimeout(promptUserNumbers, 100);
     }, 5000);
 }
 
@@ -57,3 +57,13 @@ function clearNumbers() {
     numbersDiv.innerHTML = '';
 }
 
+
+// Funzione per chiedere all'utente di inserire i numeri visti.
+function promptUserNumbers() {
+    userNumbers = [];
+    for (let i = 0; i < randomNumbers.length; i++) {
+        const userNumber = parseInt(prompt(`Inserisci il numero ${i + 1} che hai visto:`));
+        userNumbers.push(userNumber);
+    }
+    console.log(userNumbers);
+}
